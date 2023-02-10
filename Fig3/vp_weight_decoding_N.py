@@ -63,7 +63,7 @@ vpweight = vpweight[0:100, 2:, subselect]
 conds = conds[conds[:,0]==3]
 trial = 100
 
-simu = sio.loadmat(os.path.join(path, 'N_HW_sym_Norc3_meanpc.mat'))
+simu = sio.loadmat(os.path.join(path, 'N_HW_sym_Norc3_meanpc.mat')) # this data is too large, please download from ftp
 drift = simu['Data'][0,0]
 pc1 = simu['allpc1'][0][0]
 edges = [-100,-35,-25,-15,-6,6,15,25,35,100]
